@@ -1,0 +1,211 @@
+export interface LocationItem {
+  id: number;
+  name: string;
+  pos: [number, number];
+  category:
+    | "Wisata"
+    | "Fasilitas Publik"
+    | "Kesehatan"
+    | "UMKM & Kuliner"
+    | "Tempat Ibadah";
+  description: string;
+  image: string;
+  address: string;
+  rating?: number;
+}
+
+export interface GisSource {
+  file: string;
+  name: string;
+  category: LocationItem["category"];
+  description: string;
+  address: string;
+  image: string;
+}
+
+// ----------------------------------------------------------------------
+// KONFIGURASI SUMBER DATA GIS
+// Setiap file di /public/gis/ dipetakan ke kategori, nama & deskripsi
+// tampilan, karena isi GeoJSON aslinya hanya berupa titik (FID/Id saja,
+// tanpa nama lokasi). Sesuaikan teks di bawah ini sesuai kebutuhan.
+// ----------------------------------------------------------------------
+export const GIS_SOURCES: GisSource[] = [
+  {
+    file: "kantor_desa.json",
+    name: "Kantor Desa Sambirejo",
+    category: "Fasilitas Publik",
+    description:
+      "Pusat pelayanan administrasi dan pemerintahan masyarakat Desa Sambirejo.",
+    address: "Kantor Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "gereja.json",
+    name: "Gereja",
+    category: "Tempat Ibadah",
+    description: "Tempat ibadah umat Kristiani warga Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "masjid.json",
+    name: "Masjid",
+    category: "Tempat Ibadah",
+    description: "Tempat ibadah umat Muslim warga Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "pura.json",
+    name: "Pura",
+    category: "Tempat Ibadah",
+    description: "Tempat ibadah umat Hindu warga Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "ponkesdes.json",
+    name: "Ponkesdes",
+    category: "Kesehatan",
+    description:
+      "Pelayanan kesehatan dasar bagi warga desa dan pertolongan pertama.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "sekolah_dasar.json",
+    name: "Sekolah Dasar",
+    category: "Fasilitas Publik",
+    description: "Sarana pendidikan dasar bagi anak-anak Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "koperasi_desa.json",
+    name: "Koperasi Desa",
+    category: "UMKM & Kuliner",
+    description: "Lembaga usaha ekonomi masyarakat Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "lapangan_voli.json",
+    name: "Lapangan Voli",
+    category: "Fasilitas Publik",
+    description: "Fasilitas olahraga bola voli untuk warga desa.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "lapangan_andum_alpukat.json",
+    name: "Lapangan Andum Alpukat",
+    category: "Wisata",
+    description:
+      "Lokasi tradisi Andum Alpukat, kearifan lokal perayaan panen raya alpukat.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "sanggar_seni.json",
+    name: "Sanggar Seni",
+    category: "Wisata",
+    description:
+      "Sanggar seni dan budaya sebagai wadah pelestarian kesenian lokal.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    file: "makam.json",
+    name: "Makam",
+    category: "Fasilitas Publik",
+    description: "Area pemakaman umum Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80",
+  },
+];
+
+// ----------------------------------------------------------------------
+// Ambil semua file di GIS_SOURCES, konversi koordinat ke lat/lng,
+// lalu kembalikan sebagai array LocationItem siap pakai untuk Marker.
+// Logika deteksi & konversi CRS ada di ./geo-utils.ts (dipakai bersama
+// dengan village-boundary.ts).
+// ----------------------------------------------------------------------
+import { getRepresentativeRawPoint, resolveLatLng } from "./geo-utils";
+
+export async function loadGisLocations(): Promise<LocationItem[]> {
+  const results = await Promise.all(
+    GIS_SOURCES.map(async (src) => {
+      const res = await fetch(`/gis/${src.file}`);
+      if (!res.ok) {
+        throw new Error(`Gagal memuat ${src.file}`);
+      }
+      const geojson = await res.json();
+      return { src, geojson };
+    }),
+  );
+
+  const items: LocationItem[] = [];
+  let idCounter = 1;
+
+  for (const { src, geojson } of results) {
+    const features = Array.isArray(geojson?.features) ? geojson.features : [];
+    const crsName: string | undefined = geojson?.crs?.properties?.name;
+
+    if (features.length === 0) {
+      console.warn(`[GIS] ${src.file}: tidak ada fitur di dalam file.`);
+      continue;
+    }
+
+    let validCount = 0;
+
+    features.forEach((feature: any, idx: number) => {
+      const rawPoint = getRepresentativeRawPoint(feature?.geometry);
+      if (!rawPoint) {
+        console.warn(
+          `[GIS] ${src.file} #${idx}: tipe geometry "${feature?.geometry?.type}" belum didukung / kosong, dilewati.`,
+        );
+        return;
+      }
+
+      const resolved = resolveLatLng(rawPoint, crsName, `${src.file} #${idx}`);
+      if (!resolved) {
+        console.warn(
+          `[GIS] ${src.file} #${idx}: koordinat tidak valid, dilewati.`,
+        );
+        return;
+      }
+
+      const [lat, lon] = resolved;
+
+      items.push({
+        id: idCounter++,
+        name: features.length > 1 ? `${src.name} ${idx + 1}` : src.name,
+        pos: [lat, lon],
+        category: src.category,
+        description: src.description,
+        image: src.image,
+        address: src.address,
+      });
+      validCount++;
+    });
+
+    if (validCount === 0) {
+      console.warn(
+        `[GIS] ${src.file}: 0 dari ${features.length} fitur berhasil dipetakan.`,
+      );
+    }
+  }
+
+  return items;
+}

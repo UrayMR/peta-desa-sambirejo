@@ -1,11 +1,9 @@
-// app/page.tsx
 "use client";
 
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-// Dynamic import untuk Leaflet (disable SSR)
 const InteractiveMap = dynamic(
   () => import("@/app/components/interactive-map"),
   {
