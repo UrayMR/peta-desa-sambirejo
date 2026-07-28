@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","crs":{"type":"name","properties":{"name":"EPSG:32749"}},"features":[{"type":"Feature","id":0,"geometry":{"type":"Point","coordinates":[650066.61201783421,9146326.7551499102]},"properties":{"FID":0,"Id":0}}]}
