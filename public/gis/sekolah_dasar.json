@@ -6,16 +6,16 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.33914276232872, -7.7057037781068516, 0, null]
+        "coordinates": [112.347384, -7.719517, 0, null]
       },
       "properties": {
         "OBJECTID": 1,
-        "NAMOBJ": " ",
+        "NAMOBJ": "SDN Sambirejo 3",
         "LUAS": 0,
         "KATPDK": 0,
         "JLPDDK": 0,
         "FGGPDK": 999,
-        "REMARK": "Pendidikan/Penelitian Lainnya",
+        "REMARK": null,
         "FCODE": " ",
         "SRS_ID": " ",
         "LCODE": " ",
