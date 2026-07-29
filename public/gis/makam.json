@@ -1,1 +1,41 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[112.37034955298952,-7.72745827318073,0,null]},"properties":{"OBJECTID":1,"NAMOBJ":" ","FCODE":" ","REMARK":"Pemakaman Bukan Umum","SRS_ID":" ","LCODE":" ","METADATA":" ","TPMKM":4}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[112.36134494531302,-7.7226930192673535,0,null]},"properties":{"OBJECTID":7,"NAMOBJ":null,"FCODE":null,"REMARK":null,"SRS_ID":null,"LCODE":null,"METADATA":null,"TPMKM":null}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.37034955298952, -7.72745827318073, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "NAMOBJ": " ",
+        "FCODE": " ",
+        "REMARK": "Pemakaman Bukan Umum",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " ",
+        "TPMKM": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.36134494531302, -7.7226930192673535, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "NAMOBJ": null,
+        "FCODE": null,
+        "REMARK": null,
+        "SRS_ID": null,
+        "LCODE": null,
+        "METADATA": null,
+        "TPMKM": null
+      }
+    }
+  ]
+}

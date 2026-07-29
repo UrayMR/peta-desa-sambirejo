@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.358075, -7.7120429, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "NAMOBJ": "Bu Syakilla Keripik Arbika",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Keripik Arbika",
+        "MAPS_URL": "https://maps.app.goo.gl/Mg7USFk8NwjBnArd9",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM001",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3533601, -7.718461, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "NAMOBJ": "Bu Isna Bakpao Ijo & Risol",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Bakpao & Risol",
+        "MAPS_URL": "https://maps.app.goo.gl/m2UWULV7Ukfhxk5aA",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM002",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3520017, -7.7143255, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "NAMOBJ": "Bu Suparmi Keripik Pisang (UD. Fauzi Jaya)",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Keripik Pisang UD. Fauzi Jaya",
+        "MAPS_URL": "https://maps.app.goo.gl/bGgFJ3ZJ7jALPs8J8",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM003",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3517351, -7.7177797, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "NAMOBJ": "Bu Riani Keripik Pisang Qomsa",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Keripik Pisang Qomsa",
+        "MAPS_URL": "https://maps.app.goo.gl/ts7XygLuet9EhUdV8?g_st=ic",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM004",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.354, -7.718, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "NAMOBJ": "Bu Dwi Kopi Sultan",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Kopi Sultan",
+        "MAPS_URL": "https://maps.app.goo.gl/oxv3U1BEbqTpc1ry5",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM005",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3590181, -7.7122065, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "NAMOBJ": "Bolen Mama Dylan",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Bolen Mama Dylan",
+        "MAPS_URL": "https://maps.app.goo.gl/BGiM819G6Qcf76xc7",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM006",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3581513, -7.7113397, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "NAMOBJ": "Family Catering Bu Alfiah",
+        "LUAS": 0,
+        "FGSIBD": 2,
+        "FCODE": "UMKM",
+        "REMARK": "UMKM Family Catering Bu Alfiah",
+        "MAPS_URL": "https://maps.app.goo.gl/38YL5RoADaRHAwmy6?g_st=com.google.maps.preview.copy",
+        "SRS_ID": "WGS84",
+        "LCODE": "UMKM007",
+        "METADATA": " "
+      }
+    }
+  ]
+}

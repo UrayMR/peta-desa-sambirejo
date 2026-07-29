@@ -1,1 +1,176 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[112.36306559120408,-7.7231283352044784,0,null]},"properties":{"OBJECTID":2,"NAMOBJ":" ","LUAS":0,"FGSIBD":1,"FCODE":" ","REMARK":"Masjid","SRS_ID":" ","LCODE":" ","METADATA":" "}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[112.36245496592403,-7.7202035429590978,0,null]},"properties":{"OBJECTID":3,"NAMOBJ":" ","LUAS":0,"FGSIBD":1,"FCODE":" ","REMARK":"Masjid","SRS_ID":" ","LCODE":" ","METADATA":" "}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[112.35199374791318,-7.7122010300534498,0,null]},"properties":{"OBJECTID":4,"NAMOBJ":" ","LUAS":0,"FGSIBD":1,"FCODE":" ","REMARK":"Masjid","SRS_ID":" ","LCODE":" ","METADATA":" "}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[112.35970649206104,-7.7110503519921281,0,null]},"properties":{"OBJECTID":5,"NAMOBJ":" ","LUAS":0,"FGSIBD":1,"FCODE":" ","REMARK":"Masjid","SRS_ID":" ","LCODE":" ","METADATA":" "}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[112.34136025487192,-7.7049633392866212,0,null]},"properties":{"OBJECTID":7,"NAMOBJ":" ","LUAS":0,"FGSIBD":1,"FCODE":" ","REMARK":"Masjid","SRS_ID":" ","LCODE":" ","METADATA":" "}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[112.365302948872,-7.7265250529887339,0,null]},"properties":{"OBJECTID":8,"NAMOBJ":null,"LUAS":null,"FGSIBD":null,"FCODE":null,"REMARK":null,"SRS_ID":null,"LCODE":null,"METADATA":null}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[112.37244576835758,-7.7293588320443973,0,null]},"properties":{"OBJECTID":10,"NAMOBJ":null,"LUAS":null,"FGSIBD":null,"FCODE":null,"REMARK":null,"SRS_ID":null,"LCODE":null,"METADATA":null}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[112.3520017356916,-7.7143255048181345,0,null]},"properties":{"OBJECTID":11,"NAMOBJ":null,"LUAS":null,"FGSIBD":null,"FCODE":null,"REMARK":null,"SRS_ID":null,"LCODE":null,"METADATA":null}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[112.33968246527365,-7.7089305348162611,0,null]},"properties":{"OBJECTID":12,"NAMOBJ":null,"LUAS":null,"FGSIBD":null,"FCODE":null,"REMARK":null,"SRS_ID":null,"LCODE":null,"METADATA":null}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.36306559120408, -7.7231283352044784, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "NAMOBJ": " ",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.36245496592403, -7.7202035429590978, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "NAMOBJ": " ",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.35199374791318, -7.7122010300534498, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "NAMOBJ": " ",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.35970649206104, -7.7110503519921281, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "NAMOBJ": " ",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.34136025487192, -7.7049633392866212, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "NAMOBJ": " ",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " "
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.365302948872, -7.7265250529887339, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "NAMOBJ": null,
+        "LUAS": null,
+        "FGSIBD": null,
+        "FCODE": null,
+        "REMARK": null,
+        "SRS_ID": null,
+        "LCODE": null,
+        "METADATA": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.37244576835758, -7.7293588320443973, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "NAMOBJ": null,
+        "LUAS": null,
+        "FGSIBD": null,
+        "FCODE": null,
+        "REMARK": null,
+        "SRS_ID": null,
+        "LCODE": null,
+        "METADATA": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3520017356916, -7.7143255048181345, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "NAMOBJ": null,
+        "LUAS": null,
+        "FGSIBD": null,
+        "FCODE": null,
+        "REMARK": null,
+        "SRS_ID": null,
+        "LCODE": null,
+        "METADATA": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.341202, -7.707913, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "NAMOBJ": "Musala Al-Hidayah",
+        "LUAS": null,
+        "FGSIBD": null,
+        "FCODE": null,
+        "REMARK": null,
+        "SRS_ID": null,
+        "LCODE": null,
+        "METADATA": null
+      }
+    }
+  ]
+}

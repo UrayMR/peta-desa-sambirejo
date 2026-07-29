@@ -1,1 +1,15 @@
-{"type":"FeatureCollection","crs":{"type":"name","properties":{"name":"EPSG:32749"}},"features":[{"type":"Feature","id":0,"geometry":{"type":"Point","coordinates":[650923.05640882836,9145799.7799146827]},"properties":{"FID":0,"Id":0}}]}
+{
+  "type": "FeatureCollection",
+  "crs": { "type": "name", "properties": { "name": "EPSG:32749" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [650923.05640882836, 9145799.7799146827]
+      },
+      "properties": { "FID": 0, "Id": 0 }
+    }
+  ]
+}
