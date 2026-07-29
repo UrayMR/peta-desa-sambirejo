@@ -1,3 +1,5 @@
+import { getRepresentativeRawPoint, resolveLatLng } from "./geo-utils";
+
 export interface LocationItem {
   id: number;
   name: string;
@@ -23,12 +25,16 @@ export interface GisSource {
   image: string;
 }
 
-// ----------------------------------------------------------------------
-// KONFIGURASI SUMBER DATA GIS
-// Setiap file di /public/gis/ dipetakan ke kategori, nama & deskripsi
-// tampilan, karena isi GeoJSON aslinya hanya berupa titik (FID/Id saja,
-// tanpa nama lokasi). Sesuaikan teks di bawah ini sesuai kebutuhan.
-// ----------------------------------------------------------------------
+interface GisFeatureLike {
+  geometry?: {
+    type?: string;
+    coordinates?: unknown;
+  };
+  properties?: {
+    NAMOBJ?: string;
+  };
+}
+
 export const GIS_SOURCES: GisSource[] = [
   {
     file: "kantor_desa.json",
@@ -133,15 +139,16 @@ export const GIS_SOURCES: GisSource[] = [
     image:
       "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80",
   },
+  {
+    file: "umkm.json",
+    name: "UMKM",
+    category: "UMKM & Kuliner",
+    description: "Lembaga usaha ekonomi masyarakat Desa Sambirejo.",
+    address: "Desa Sambirejo, Wonosalam",
+    image:
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80",
+  },
 ];
-
-// ----------------------------------------------------------------------
-// Ambil semua file di GIS_SOURCES, konversi koordinat ke lat/lng,
-// lalu kembalikan sebagai array LocationItem siap pakai untuk Marker.
-// Logika deteksi & konversi CRS ada di ./geo-utils.ts (dipakai bersama
-// dengan village-boundary.ts).
-// ----------------------------------------------------------------------
-import { getRepresentativeRawPoint, resolveLatLng } from "./geo-utils";
 
 export async function loadGisLocations(): Promise<LocationItem[]> {
   const results = await Promise.all(
@@ -169,28 +176,35 @@ export async function loadGisLocations(): Promise<LocationItem[]> {
 
     let validCount = 0;
 
-    features.forEach((feature: any, idx: number) => {
+    features.forEach((feature: GisFeatureLike, idx: number) => {
       const rawPoint = getRepresentativeRawPoint(feature?.geometry);
       if (!rawPoint) {
-        console.warn(
-          `[GIS] ${src.file} #${idx}: tipe geometry "${feature?.geometry?.type}" belum didukung / kosong, dilewati.`,
-        );
+        // console.warn(
+        //   `[GIS] ${src.file} #${idx}: tipe geometry "${feature?.geometry?.type}" belum didukung / kosong, dilewati.`,
+        // );
         return;
       }
 
       const resolved = resolveLatLng(rawPoint, crsName, `${src.file} #${idx}`);
       if (!resolved) {
-        console.warn(
-          `[GIS] ${src.file} #${idx}: koordinat tidak valid, dilewati.`,
-        );
+        // console.warn(
+        //   `[GIS] ${src.file} #${idx}: koordinat tidak valid, dilewati.`,
+        // );
         return;
       }
 
       const [lat, lon] = resolved;
 
+      const featureName = feature?.properties?.NAMOBJ?.trim();
+      const displayName = featureName
+        ? featureName
+        : features.length > 1
+          ? `${src.name} ${idx + 1}`
+          : src.name;
+
       items.push({
         id: idCounter++,
-        name: features.length > 1 ? `${src.name} ${idx + 1}` : src.name,
+        name: displayName,
         pos: [lat, lon],
         category: src.category,
         description: src.description,
@@ -201,9 +215,9 @@ export async function loadGisLocations(): Promise<LocationItem[]> {
     });
 
     if (validCount === 0) {
-      console.warn(
-        `[GIS] ${src.file}: 0 dari ${features.length} fitur berhasil dipetakan.`,
-      );
+      // console.warn(
+      //   `[GIS] ${src.file}: 0 dari ${features.length} fitur berhasil dipetakan.`,
+      // );
     }
   }
 
