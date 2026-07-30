@@ -122,7 +122,7 @@ export default function HomePage() {
             <div className="relative bg-white p-4 sm:p-6 rounded-2xl border border-emerald-100 transform transition-all duration-500 ease-out">
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg border border-stone-200 bg-stone-100">
                 <Image
-                  src="/peta-desa-sambirejo.jpeg" // Pastikan file ada di /public
+                  src="/peta-desa-sambirejo.png" // Pastikan file ada di /public
                   alt="Tampilan Peta Fisik Wilayah Desa Sambirejo Wonosalam"
                   fill
                   priority
