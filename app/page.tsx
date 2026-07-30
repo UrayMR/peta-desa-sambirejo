@@ -130,11 +130,6 @@ export default function HomePage() {
                   className="object-contain" // KUNCI: Menampilkan gambar utuh
                 />
               </div>
-
-              {/* Caption Tipis */}
-              <div className="absolute bottom-6 right-8 bg-black/60 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">
-                Sumber: Badan Informasi Geospasial Indonesia, 2026
-              </div>
             </div>
 
             {/* Aksen Daun Dekoratif di pojok bingkai */}
@@ -211,11 +206,9 @@ export default function HomePage() {
       <footer className="bg-emerald-950 text-emerald-200 py-8 px-6 mt-12 text-center text-sm border-t border-emerald-900 flex justify-between items-center flex-row">
         <p>
           &copy; {new Date().getFullYear()} Pemerintah Desa Sambirejo,
-          Wonosalam. 
+          Wonosalam.
         </p>
-        <p>
-          Dibuat oleh KKN 35 UPN &ldquo;Veteran&ldquo; Jawa Timur
-        </p>
+        <p>Dibuat oleh KKN 35 UPN &ldquo;Veteran&ldquo; Jawa Timur</p>
       </footer>
     </main>
   );

@@ -7,9 +7,9 @@
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [1315230.5347921215, 9138385.7781919912]
+        "coordinates": [112.3731976, -7.7301926]
       },
-      "properties": { "FID": 0, "Id": 0 }
+      "properties": { "FID": 0, "Id": 0, "NAMOBJ": "Lapangan Voli Sumber Arum" }
     }
   ]
 }

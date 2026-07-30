@@ -9,7 +9,11 @@
         "type": "Point",
         "coordinates": [650605.28683634801, 9145630.9308807366]
       },
-      "properties": { "FID": 0, "Id": 0 }
+      "properties": {
+        "FID": 0,
+        "Id": 0,
+        "NAMOBJ": "Pura Puja Nirwana Sambirejo"
+      }
     }
   ]
 }

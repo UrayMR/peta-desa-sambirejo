@@ -7,9 +7,9 @@
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [650452.33534313273, 9145526.1963619925]
+        "coordinates": [112.365222, -7.726225]
       },
-      "properties": { "FID": 0, "Id": 0 }
+      "properties": { "FID": 0, "Id": 0, "NAMOBJ": "Sanggar Seni" }
     }
   ]
 }

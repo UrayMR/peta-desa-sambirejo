@@ -44,7 +44,7 @@ export const GIS_SOURCES: GisSource[] = [
       "Pusat pelayanan administrasi dan pemerintahan masyarakat Desa Sambirejo.",
     address: "Kantor Desa Sambirejo, Wonosalam",
     image:
-      "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80",
+      "https://plus.unsplash.com/premium_photo-1676657954811-9409c4830467?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFuZ3VuYW58ZW58MHx8MHx8fDA%3D",
   },
   {
     file: "gereja.json",
@@ -71,7 +71,7 @@ export const GIS_SOURCES: GisSource[] = [
     description: "Tempat ibadah umat Hindu warga Desa Sambirejo.",
     address: "Desa Sambirejo, Wonosalam",
     image:
-      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=600&q=80",
+      "https://plus.unsplash.com/premium_photo-1661878915254-f3163e91d870?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHVyYXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     file: "ponkesdes.json",
@@ -118,7 +118,7 @@ export const GIS_SOURCES: GisSource[] = [
       "Lokasi tradisi Andum Alpukat, kearifan lokal perayaan panen raya alpukat.",
     address: "Desa Sambirejo, Wonosalam",
     image:
-      "https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80",
+      "https://plus.unsplash.com/premium_photo-1725408037993-f891474828c9?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     file: "sanggar_seni.json",
@@ -128,7 +128,7 @@ export const GIS_SOURCES: GisSource[] = [
       "Sanggar seni dan budaya sebagai wadah pelestarian kesenian lokal.",
     address: "Desa Sambirejo, Wonosalam",
     image:
-      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1642473194844-c23722ece3b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNlbml8ZW58MHx8MHx8fDA%3D",
   },
   {
     file: "makam.json",

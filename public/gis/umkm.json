@@ -46,7 +46,7 @@
       "id": 3,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.3520017, -7.7143255, 0, null]
+        "coordinates": [112.3602905, -7.7140221, 0, null]
       },
       "properties": {
         "OBJECTID": 3,
@@ -86,7 +86,7 @@
       "id": 5,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.354, -7.718, 0, null]
+        "coordinates": [112.3622102, -7.723039, 0, null]
       },
       "properties": {
         "OBJECTID": 5,

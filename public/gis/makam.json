@@ -6,11 +6,11 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.37034955298952, -7.72745827318073, 0, null]
+        "coordinates": [112.3693495, -7.726753, 0, null]
       },
       "properties": {
         "OBJECTID": 1,
-        "NAMOBJ": " ",
+        "NAMOBJ": "Tempat Pemakaman Umum Sumber Arum",
         "FCODE": " ",
         "REMARK": "Pemakaman Bukan Umum",
         "SRS_ID": " ",
@@ -28,7 +28,7 @@
       },
       "properties": {
         "OBJECTID": 7,
-        "NAMOBJ": null,
+        "NAMOBJ": "Tempat Pemakaman Umum Sambirejo",
         "FCODE": null,
         "REMARK": null,
         "SRS_ID": null,
