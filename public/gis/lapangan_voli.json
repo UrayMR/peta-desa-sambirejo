@@ -1,6 +1,5 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "EPSG:32748" } },
   "features": [
     {
       "type": "Feature",
@@ -9,7 +8,26 @@
         "type": "Point",
         "coordinates": [112.3731976, -7.7301926]
       },
-      "properties": { "FID": 0, "Id": 0, "NAMOBJ": "Lapangan Voli Sumber Arum" }
+      "properties": {
+        "FID": 0,
+        "Id": 0,
+        "NAMOBJ": "Lapangan Voli Sumber Arum",
+        "IMAGE_SRC": "/tag-thumbnail/lapangan-voli-sumberarum.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.34831843117303, -7.719960789108706]
+      },
+      "properties": {
+        "FID": 1,
+        "Id": 1,
+        "NAMOBJ": "Lapangan Voli Putra AJM (Jumok)",
+        "IMAGE_SRC": "/tag-thumbnail/lapangan-voli-jumok.jpg"
+      }
     }
   ]
 }

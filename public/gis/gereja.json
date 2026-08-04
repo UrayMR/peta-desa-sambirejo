@@ -6,11 +6,12 @@
       "id": 2,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.3727969, -7.7278537, 0, null]
+        "coordinates": [112.37270309464064, -7.727607697997603, 0, null]
       },
       "properties": {
         "OBJECTID": 2,
         "NAMOBJ": "GSJA PAMITRAN SUMBER ARUM",
+        "IMAGE_SRC": "/tag-thumbnail/gsja-sumberarum.jpg",
         "LUAS": 0,
         "FGSIBD": 2,
         "FCODE": " ",

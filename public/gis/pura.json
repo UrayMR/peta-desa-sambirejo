@@ -1,18 +1,18 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "EPSG:32749" } },
   "features": [
     {
       "type": "Feature",
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [650605.28683634801, 9145630.9308807366]
+        "coordinates": [112.36557298012599, -7.726678524666816, 0, null]
       },
       "properties": {
         "FID": 0,
         "Id": 0,
-        "NAMOBJ": "Pura Puja Nirwana Sambirejo"
+        "NAMOBJ": "Pura Puja Nirwana Sambirejo",
+        "IMAGE_SRC": "/tag-thumbnail/pura-puja-nirwana-sambirejo.jpg"
       }
     }
   ]

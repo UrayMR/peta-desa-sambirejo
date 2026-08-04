@@ -11,8 +11,8 @@
       "properties": {
         "OBJECTID": 1,
         "NAMOBJ": "Tempat Pemakaman Umum Sumber Arum",
+        "IMAGE_SRC": "/tag-thumbnail/makam-umum-sumberarum.jpg",
         "FCODE": " ",
-        "REMARK": "Pemakaman Bukan Umum",
         "SRS_ID": " ",
         "LCODE": " ",
         "METADATA": " ",
@@ -29,6 +29,7 @@
       "properties": {
         "OBJECTID": 7,
         "NAMOBJ": "Tempat Pemakaman Umum Sambirejo",
+        "IMAGE_SRC": "/tag-thumbnail/makam-umum-sambirejo.jpg",
         "FCODE": null,
         "REMARK": null,
         "SRS_ID": null,

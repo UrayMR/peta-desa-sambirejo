@@ -6,18 +6,19 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.3624867, -7.7232405, 0, null]
+        "coordinates": [112.34884243541083, -7.720681905891906, 0, null]
       },
       "properties": {
-        "OBJECTID": 2,
-        "NAMOBJ": "Musholla Miftakhul Huda",
+        "OBJECTID": 1,
+        "NAMOBJ": "Masjid Baitul Muttaqin",
         "LUAS": 0,
         "FGSIBD": 1,
         "FCODE": " ",
         "REMARK": "Masjid",
         "SRS_ID": " ",
         "LCODE": " ",
-        "METADATA": " "
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/masjid-baitul-muttaqin.jpg"
       }
     },
     {
@@ -25,29 +26,10 @@
       "id": 2,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.362867, -7.719971, 0, null]
+        "coordinates": [112.35396705953555, -7.715322230609125, 0, null]
       },
       "properties": {
-        "OBJECTID": 3,
-        "NAMOBJ": "Masjid Sebelah Las",
-        "LUAS": 0,
-        "FGSIBD": 1,
-        "FCODE": " ",
-        "REMARK": "Masjid",
-        "SRS_ID": " ",
-        "LCODE": " ",
-        "METADATA": " "
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [112.353946, -7.715496, 0, null]
-      },
-      "properties": {
-        "OBJECTID": 4,
+        "OBJECTID": 2,
         "NAMOBJ": "Masjid Al-Muhyiddin",
         "LUAS": 0,
         "FGSIBD": 1,
@@ -55,7 +37,28 @@
         "REMARK": "Masjid",
         "SRS_ID": " ",
         "LCODE": " ",
-        "METADATA": " "
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/masjid-al-muhyiddin.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3519519184701, -7.717467042255196, 0, null]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "NAMOBJ": "Masjid Jabal Nur (LDII)",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/masjid-jabal-nur.jpg"
       }
     },
     {
@@ -63,18 +66,19 @@
       "id": 4,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.35970649206104, -7.7110503519921281, 0, null]
+        "coordinates": [112.362899, -7.720094, 0, null]
       },
       "properties": {
-        "OBJECTID": 5,
-        "NAMOBJ": "Masjid Bangunrejo",
+        "OBJECTID": 4,
+        "NAMOBJ": "Musholla",
         "LUAS": 0,
         "FGSIBD": 1,
         "FCODE": " ",
-        "REMARK": "Masjid",
+        "REMARK": "Musholla",
         "SRS_ID": " ",
         "LCODE": " ",
-        "METADATA": " "
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/musholla.jpg"
       }
     },
     {
@@ -82,18 +86,19 @@
       "id": 5,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.34136025487192, -7.7049633392866212, 0, null]
+        "coordinates": [112.36258867737443, -7.7230719759055555, 0, null]
       },
       "properties": {
-        "OBJECTID": 7,
-        "NAMOBJ": "Masjid Jami' Jenisgelaran",
+        "OBJECTID": 5,
+        "NAMOBJ": "Musholla Miftakhul Huda",
         "LUAS": 0,
         "FGSIBD": 1,
         "FCODE": " ",
-        "REMARK": "Masjid",
+        "REMARK": "Musholla",
         "SRS_ID": " ",
         "LCODE": " ",
-        "METADATA": " "
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/musholla-miftakhul-huda.jpg"
       }
     },
     {
@@ -101,18 +106,19 @@
       "id": 6,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.365302948872, -7.7265250529887339, 0, null]
+        "coordinates": [112.36527673146584, -7.726397286441396, 0, null]
       },
       "properties": {
-        "OBJECTID": 8,
+        "OBJECTID": 6,
         "NAMOBJ": "Masjid Nurul Iman",
-        "LUAS": null,
-        "FGSIBD": null,
-        "FCODE": null,
-        "REMARK": null,
-        "SRS_ID": null,
-        "LCODE": null,
-        "METADATA": null
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/masjid-nurul-iman.jpg"
       }
     },
     {
@@ -120,37 +126,19 @@
       "id": 7,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.3730375, -7.7292217, 0, null]
+        "coordinates": [112.37319468197694, -7.7291800843301735, 0, null]
       },
       "properties": {
-        "OBJECTID": 10,
-        "NAMOBJ": "Masjid Al-Huda Sumber Arum",
-        "LUAS": null,
-        "FGSIBD": null,
-        "FCODE": null,
-        "REMARK": null,
-        "SRS_ID": null,
-        "LCODE": null,
-        "METADATA": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [112.341202, -7.707913, 0, null]
-      },
-      "properties": {
-        "OBJECTID": 12,
-        "NAMOBJ": "Musala Al-Hidayah",
-        "LUAS": null,
-        "FGSIBD": null,
-        "FCODE": null,
-        "REMARK": null,
-        "SRS_ID": null,
-        "LCODE": null,
-        "METADATA": null
+        "OBJECTID": 7,
+        "NAMOBJ": "Masjid Al-Huda Sumberarum",
+        "LUAS": 0,
+        "FGSIBD": 1,
+        "FCODE": " ",
+        "REMARK": "Masjid",
+        "SRS_ID": " ",
+        "LCODE": " ",
+        "METADATA": " ",
+        "IMAGE_SRC": "/tag-thumbnail/masjid-al-huda.jpg"
       }
     }
   ]

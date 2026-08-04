@@ -6,22 +6,23 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.347384, -7.719517, 0, null]
+        "coordinates": [112.34755646092053, -7.719310164442702, 0, null]
       },
       "properties": {
         "OBJECTID": 1,
         "NAMOBJ": "SDN Sambirejo 3",
-        "LUAS": 0,
-        "KATPDK": 0,
-        "JLPDDK": 0,
-        "FGGPDK": 999,
+        "IMAGE_SRC": "/tag-thumbnail/sdn-sambirejo-3.jpg",
+        "LUAS": null,
+        "KATPDK": null,
+        "JLPDDK": null,
+        "FGGPDK": null,
         "REMARK": null,
         "FCODE": " ",
         "SRS_ID": " ",
         "LCODE": " ",
         "METADATA": " ",
-        "JJGPDF": 999,
-        "JNSPDL": 0
+        "JJGPDF": null,
+        "JNSPDL": null
       }
     },
     {
@@ -29,11 +30,12 @@
       "id": 3,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.36468136355415, -7.7256800302091619, 0, null]
+        "coordinates": [112.364672389182, -7.725420209821419, 0, null]
       },
       "properties": {
         "OBJECTID": 3,
         "NAMOBJ": "SDN Sambirejo 1",
+        "IMAGE_SRC": "/tag-thumbnail/sdn-sambirejo-1.jpg",
         "LUAS": null,
         "KATPDK": null,
         "JLPDDK": null,

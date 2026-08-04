@@ -10,7 +10,8 @@
       },
       "properties": {
         "OBJECTID": 2,
-        "NAMOBJ": null,
+        "NAMOBJ": "Kantor & Balai Desa Sambirejo",
+        "IMAGE_SRC": "/tag-thumbnail/kantor-desa-sambirejo.jpg",
         "FGSGOV": null,
         "LUAS": null,
         "FCODE": null,

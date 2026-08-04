@@ -32,6 +32,7 @@ interface GisFeatureLike {
   };
   properties?: {
     NAMOBJ?: string;
+    IMAGE_SRC?: string; // Added to read image property from GeoJSON
   };
 }
 
@@ -139,15 +140,6 @@ export const GIS_SOURCES: GisSource[] = [
     image:
       "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80",
   },
-  {
-    file: "umkm.json",
-    name: "UMKM",
-    category: "UMKM & Kuliner",
-    description: "Lembaga usaha ekonomi masyarakat Desa Sambirejo.",
-    address: "Desa Sambirejo, Wonosalam",
-    image:
-      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80",
-  },
 ];
 
 export async function loadGisLocations(): Promise<LocationItem[]> {
@@ -170,7 +162,7 @@ export async function loadGisLocations(): Promise<LocationItem[]> {
     const crsName: string | undefined = geojson?.crs?.properties?.name;
 
     if (features.length === 0) {
-      console.warn(`[GIS] ${src.file}: tidak ada fitur di dalam file.`);
+      // console.warn(`[GIS] ${src.file}: tidak ada fitur di dalam file.`);
       continue;
     }
 
@@ -179,17 +171,11 @@ export async function loadGisLocations(): Promise<LocationItem[]> {
     features.forEach((feature: GisFeatureLike, idx: number) => {
       const rawPoint = getRepresentativeRawPoint(feature?.geometry);
       if (!rawPoint) {
-        // console.warn(
-        //   `[GIS] ${src.file} #${idx}: tipe geometry "${feature?.geometry?.type}" belum didukung / kosong, dilewati.`,
-        // );
         return;
       }
 
       const resolved = resolveLatLng(rawPoint, crsName, `${src.file} #${idx}`);
       if (!resolved) {
-        // console.warn(
-        //   `[GIS] ${src.file} #${idx}: koordinat tidak valid, dilewati.`,
-        // );
         return;
       }
 
@@ -202,13 +188,17 @@ export async function loadGisLocations(): Promise<LocationItem[]> {
           ? `${src.name} ${idx + 1}`
           : src.name;
 
+      const featureImage = feature?.properties?.IMAGE_SRC?.trim();
+      const displayImage =
+        featureImage && featureImage !== "" ? featureImage : src.image;
+
       items.push({
         id: idCounter++,
         name: displayName,
         pos: [lat, lon],
         category: src.category,
         description: src.description,
-        image: src.image,
+        image: displayImage,
         address: src.address,
       });
       validCount++;

@@ -1,15 +1,19 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "EPSG:32749" } },
   "features": [
     {
       "type": "Feature",
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.365222, -7.726225]
+        "coordinates": [112.36527020537386, -7.7261512917909805, 0, null]
       },
-      "properties": { "FID": 0, "Id": 0, "NAMOBJ": "Sanggar Seni" }
+      "properties": {
+        "FID": 0,
+        "Id": 0,
+        "NAMOBJ": "Sanggar Seni Desa Sambirejo",
+        "IMAGE_SRC": "/tag-thumbnail/sanggar-seni-sambirejo.jpg"
+      }
     }
   ]
 }

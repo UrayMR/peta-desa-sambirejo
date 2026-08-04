@@ -1,15 +1,19 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "EPSG:32749" } },
   "features": [
     {
       "type": "Feature",
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [112.360854, -7.721388]
+        "coordinates": [112.360854, -7.721388, 0, null]
       },
-      "properties": { "FID": 0, "Id": 0, "NAMOBJ": "Koperasi Desa Merah Putih" }
+      "properties": {
+        "FID": 0,
+        "Id": 0,
+        "NAMOBJ": "Koperasi Desa Merah Putih",
+        "IMAGE_SRC": "/tag-thumbnail/koperasi-desa.jpg"
+      }
     }
   ]
 }

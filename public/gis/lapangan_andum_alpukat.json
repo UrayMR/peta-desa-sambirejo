@@ -1,15 +1,19 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "EPSG:32749" } },
   "features": [
     {
       "type": "Feature",
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [650923.05640882836, 9145799.7799146827]
+        "coordinates": [112.36905009104208, -7.726427082258987, 0, null]
       },
-      "properties": { "FID": 0, "Id": 0 }
+      "properties": {
+        "FID": 0,
+        "Id": 0,
+        "NAMOBJ": "Lapangan Andum Alpukat",
+        "IMAGE_SRC": "/tag-thumbnail/lapangan-andum-alpukat.jpg"
+      }
     }
   ]
 }

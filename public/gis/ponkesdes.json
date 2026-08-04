@@ -1,15 +1,19 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "EPSG:32748" } },
   "features": [
     {
       "type": "Feature",
       "id": 0,
       "geometry": {
         "type": "Point",
-        "coordinates": [1314330.4339640851, 9138960.9405177925]
+        "coordinates": [112.36512235358438, -7.725580868052015, 0, null]
       },
-      "properties": { "FID": 0, "Id": 0 }
+      "properties": {
+        "FID": 0,
+        "Id": 0,
+        "NAMOBJ": "Ponkesdes Sambirejo",
+        "IMAGE_SRC": "/tag-thumbnail/ponkesdes-sambirejo.jpg"
+      }
     }
   ]
 }
